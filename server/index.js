@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const CONNECTION_STRING = require('postgres:///unit5')
 const SERVER_PORT = 4004
 const {seed, getCountries, getCities, createCity, deleteCity} = require('./controller.js')
 
